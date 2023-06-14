@@ -1,0 +1,49 @@
+Suponha que você esteja criando uma tabela chamada "alunos" para armazenar informações sobre os alunos de uma escola. A tabela terá as seguintes colunas:
+
+id (chave primária, número inteiro)
+
+nome (texto)
+
+idade (número inteiro)
+
+nota (número decimal)
+
+Além disso você deve:
+
+Inserir 5 novos alunos , com o id sendo um numero inteiro controlado por você (id = 1 , 2 , 3, 4, 5)
+
+Atualizar a nota do aluno de id = 2
+
+Deletar o aluno com o id = 3
+
+Fazer um select de todos alunos que tenham nota superior a 7
+
+Perguntas dessa tarefa
+Poste aqui sua resposta para a criação de tabela.
+Poste aqui sua resposta para comando de insert
+Poste aqui sua resposta para comando de update
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+RESOLUÇÃO:
+
+CREATE TABLE alunos (
+  id INTEGER PRIMARY key,
+  nome TEXT,
+  idade INTEGER,
+  nota DECIMAL
+);
+
+INSERT INTO alunos (id, nome, idade, nota) VALUES
+	(1, 'Daiana', 36, 10.0),
+  (2, 'Izabella', 33, 10.0),
+  (3, 'Lenice', 30, 0.5),
+  (4, 'Neutra', 23, 7.0),
+  (5, 'Susana', 48, 8.0);
+  
+UPDATE alunos SET nota = 9.5 WHERE id =2;
+ 
+DELETE FROM alunos WHERE id = 3;
+
+SELECT * FROM alunos;
+
+SELECT * FROM alunos WHERE nota > 7.0;
