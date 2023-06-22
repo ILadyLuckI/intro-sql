@@ -13,4 +13,4 @@ Para esta atividade, utilizei o pg-sql.com
 ---
 
 ## Detalhes do projeto
-
+Este repositório serve apenas como guia de estudos.
